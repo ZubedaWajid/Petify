@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HomeFinder</title>
+        <link rel="stylesheet" href="Question8.css">
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a class="navigation"
+                            href="Home.html">Home Page</a></li>
+                    <li><a class="navigation"
+                        href="Pets.html"> Browse
+                        Available Pets</a></li>
+                    <li><a class="navigation active"
+                            href="Find_Dog-Cat.html">  Find A Dog/Cat</a></li>
+                    <li><a class="navigation" href="DogCare.html">
+                            Dog Care</a></li>
+                    <li><a class="navigation" href="CatCare.html">Cat
+                            Care</a></li>
+                    <li><a class="navigation" href="Giveaway.html">
+                        Have A Pet To Give
+                        Away</a></li>
+                    <li><a class="navigation" href="Contact.html">
+                            Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="main_content">
+            <header>
+                <div class="header"> 
+                        
+                        <table>
+       
+                                <tr>
+                                    <th style="font-size: 70px;">Petsy</th>  
+                                        <th><a href="Home.html" style="padding :0px"><img class="logo" src="logo.jpg" alt="logo" style="width: 10%;" height="10"> </a></th>
+                                </tr>
+                            
+                                </table>
+
+                
+                </div>
+            </header>
+                <div class="content_form">
+                    <form>
+                        <fieldset style="padding:10px">
+                            <legend><h3>Give Away your Pet</h3></legend>
+    
+                            <label>What is your pet?</label><br><br>
+    
+                            <label>Dog:</label>
+                            <input type="radio" name="choose" value="dog">
+    
+                            <label>Cat:</label>
+                            <input type="radio" name="choose" value="cat"><br><br><br>
+                        </fieldset><br>
+    
+                    </form>
+    
+                    <div id="dog-form" style="display:none;">
+                        <form id="dog_form">
+                            <fieldset style="padding:10px">
+                                <label>What breed is your dog?</label><br><br>
+                                <label>German Shepherd:</label>
+                                <input type="radio" name="breed_dog"
+                                    value="German">
+    
+                                <label>Bulldog:</label>
+                                <input type="radio" name="breed_dog"
+                                    value="Bulldog">
+    
+                                <label>Golder Retriever:</label>
+                                <input type="radio" name="breed_dog"
+                                    value="Golden"><br><br>
+    
+                                <label>Poodle:</label>
+                                <input type="radio" name="breed_dog"
+                                    value="Poodle">
+    
+                                <label>Husky:</label>
+                                <input type="radio" name="breed_dog"
+                                    value="Husky">
+    
+                                <label>Mixed:</label>
+                                <input type="radio" name="breed_dog"
+                                    value="mixed">
+    
+                                <label>None:</label>
+                                <input type="radio" name="breed_dog"
+                                    value="none"><br><br><br>
+    
+    
+    
+                                <label> Age of dog?</label>
+                                <select name="age_dog" id="age_dog">
+                                    <option value="default"> --- </option>
+                                    <option value="range1">0 - 1</option>
+                                    <option value="range2">1 - 3</option>
+                                    <option value="range3">3 - 7</option>
+                                    <option value="range4">7 - over</option>
+                                </select><br><br>
+    
+    
+    
+                                <label>Dog gender?</label>
+                                <select name="gender_dog">
+                                    <option value="default">---</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select><br><br><br>
+    
+    
+    
+                                <label>Does your dog get along with
+                                    any of these options [pick as many as apply]:
+                                </label><br><br>
+                                <label>Other Dogs:</label>
+                                <input type="checkbox" name="OtherDog" value="other dogs">
+                                <label>Other Cats:</label>
+                                <input type="checkbox" name="OtherCat" value="other cats">
+                                <label>Small Children:</label>
+                                <input type="checkbox" name="Children"
+                                    value="children">
+                                    <label>Does Not Matter:</label>
+                                <input type="checkbox" name="NA"
+                                    value="NA">
+    
+                                <br><br><br>
+    
+    
+                                <p><label>Comment section to
+                                        describe your pet:</label></p>
+                                <textarea name="comment_dog"
+                                    rows="10" cols="100"></textarea>
+    
+                                <br><br><br>
+    
+                                <label>Your full name:</label>
+                                <input type="text" name="name_dog">
+    
+                                <br><br><br>
+    
+                                <label>Email:</label>
+                                <input type="email" placeholder="Enter your email"
+                                    name="email_dog">
+                            </fieldset>
+                            <br>
+                            <label>Thank you for taking the time to fill
+                                out the
+                                survey!</label><br><br>
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                            <br>
+    
+    
+                        </form>
+                    </div>
+    
+                    <form id="cat_form">
+    
+                        <div id="cat-form" style="display:none;">
+                            <fieldset style="padding:10px">
+                                <label>What breed is your cat?</label><br><br>
+                                <label>Maine Coon:</label>
+                                <input type="radio" name="breed_cat"
+                                    value="Maine">
+    
+                                <label>Bristish Shorthair:</label>
+                                <input type="radio" name="breed_cat"
+                                    value="Bristish">
+    
+                                <label>Sphynx:</label>
+                                <input type="radio" name="breed_cat"
+                                    value="Sphynx"><br><br>
+    
+                                <label>American Shorthair:</label>
+                                <input type="radio"
+                                    name="breed_cat" value="American Shorthair">
+                                <label>Persian:</label>
+                                <input type="radio" name="breed_cat"
+                                    value="Persian">
+    
+                                <label>Mixed:</label>
+                                <input type="radio" name="breed_cat"
+                                    value="mixed">
+    
+                                <label>None:</label>
+                                <input type="radio" name="breed_cat"
+                                    value="none"><br><br><br>
+    
+    
+                                <label> Age of cat?</label>
+                                <select name="age_cat" id="age_cat">
+                                    <option value="default"> --- </option>
+                                    <option value="range1">0 - 1</option>
+                                    <option value="range2">1 - 3</option>
+                                    <option value="range3">3 - 7</option>
+                                    <option value="range4">7 - over</option>
+                                </select><br><br>
+    
+    
+    
+                                <label>Cat gender?</label>
+                                <select name="gender_cat" id="gender_cat">
+                                    <option value="default">---</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select><br><br><br>
+    
+    
+    
+    
+    
+                                <label>Does your dog get along with
+                                    any of these options [pick as many as apply]:
+                                </label><br><br>
+                                <label>Other Dogs:</label>
+                                <input type="checkbox" name="OtherDog" value="other dogs">
+                                <label>Other Cats:</label>
+                                <input type="checkbox" name="OtherCat" value="other cats">
+                                <label>Small Children:</label>
+                                <input type="checkbox" name="Children"
+                                    value="children">
+                                    <label>Does Not Matter:</label>
+                                <input type="checkbox" name="NA"
+                                    value="NA">
+                                <br><br><br>
+    
+    
+    
+                                <p><label>Comment section to
+                                        describe your pet:</label></p>
+                                <textarea name="comment_cat"
+                                    rows="10" cols="100"></textarea>
+    
+                                <br><br><br>
+    
+                                <label>Your full name:</label>
+                                <input type="text" name="name_cat">
+    
+                                <br><br><br>
+    
+                                <label>Email:</label>
+                                <input type="email" placeholder="Enter your email"
+                                    name="email_cat">
+                                <br><br><br>
+                            </fieldset>
+                            <br>
+                            <label>Thank you for taking the time to fill
+                                out the
+                                survey!</label><br><br>
+                            <input type="submit" value="Submit"
+                                onclick="validate_cat_form()">
+                            <input type="reset" value="Reset">
+                            <br>
+                        </div>
+    
+    
+                    </form>
+    
+    
+    
+    
+    
+                </div>
+                <div style="padding-left: 50px;margin-top:35%">
+
+                    <footer><button class="privacy" onclick="footer()">
+                            Privacy/Disclaimer Statement</button></footer>
+                </div>
+
+            </div>
+
+          
+        </div>
+
+
+
+
+
+    </body>
+</html>
