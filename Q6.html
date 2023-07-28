@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q6 Navigation Bar</title>
+    <style>
+        ul{
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #c4bebec5;
+            
+        }
+        li a {
+            display: block;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        li a.active {
+            background-color: green;
+            color: white;
+        }
+        li a:hover:not(.active){
+            background-color: rgb(10, 10, 10);
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="home">Home</a></li>
+        <li><a href="news">News</a></li>
+        <li><a href="Contact">Contact</a></li>
+        <li><a href="About">About</a></li>
+
+    </ul>
+</body>
+</html>

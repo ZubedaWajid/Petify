@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      label{
+          font-weight: bold;
+      }
+      .legendClass{
+          font-weight: bold;
+      }
+      #makeBold{
+          color:#392EA6;
+      }
+      #makeBold2{
+          color:#BF2941;
+      }
+      .legend1{
+        color: #392080;
+      }
+      .legend2{
+        color: aquamarine;
+      }
+      .ignore{
+          font-weight: normal;
+      }
+      body{
+          background-color: rgb(101, 128, 168);
+      }
+      #field1{
+          background-color: #acacdf;
+          border-color: #0577ac;
+      }
+      #field2{
+          background-color: rgb(123, 133, 179);
+          border-color: #3a0353;
+      }
+      .l1{
+          color: rgb(12, 48, 59);
+      }
+      .l2{
+          color: #fc5d5d;
+      }
+  </style>
+</head>
+<body>
+    <table>
+       
+        <tr>
+            <th style="font-size: 30px;">Music Lover's Survey</th>  
+            <th><a href="https://pixabay.com/vectors/silhouette-musical-clef-bass-3275055/"><img src="musicalNote.webp" height="100" alt="img"></a></th>
+        </tr>
+    
+    </table>
+    <form>
+<fieldset id="field1">
+
+  <legend class="legendClass"><label id="boldIt">Music Lover's Personal information</label></legend>
+
+  <label class="legend1">First name</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label class="legend1">Family name</label>
+  <input type="text" id="lname" name="lname"><br><br>
+ 
+  <label class="legend1">Gender: </label>
+  <input type="radio" name="gndBox" id="fBox">
+  <label class="legend1">Female</label>
+  <input type="radio" name="gndBox" id="mBox">
+  <label class="legend1">Male</label><br><br>
+  <label class="legend1">What age category are you from?</label> 
+  <select name="age" id="age">
+  <option value="under18">Less than 18</option>
+  <option value="Over18">Greater than 18</option>
+  </select>
+  <br><br>
+  <label class="legend1">Email</label>
+  <input type="text" name="email" id="email">
+
+</fieldset>
+<br>
+<fieldset id="field2">
+
+<legend>Survey Questions</legend>
+  
+  <label class="legend2">Which type of music do you listen to? (Pick as many as apply)</label><br>
+  <input type="checkbox" name="blues" id="blues">  
+  <label class="legend2">Blues</label>
+  <input type="checkbox" name="classical" id="classical">
+  <label class="legend2">Classical music</label>
+  <input type="checkbox" name="electronic" id="electronic">
+  <label class="legend2">Electronic Music</label>
+  <br>
+  <input type="checkbox" name="hiphop" id="hiphop">
+  <label class="legend2">Hip Hop/Rap</label>
+  <input type="checkbox" name="pop" id="pop">
+  <label class="legend2">Pop (Popular music)</label>
+  <input type="checkbox" name="reggae" id="reggae">
+  <label class="legend2">Reggae</label>
+  <br>
+  
+  <input type="checkbox" name="other" id="other">
+  <label class="legend2">Other</label>
+  <br><br>
+
+  <label class="legend2">List your 3 favourite artists/bands:</label><br>
+  <input type="text" name="artist1" id="artist1">  
+  <input type="text" name="artist2" id="artist2">   
+  <input type="text" name="artist3" id="artist3">
+  <br><br>
+
+  <label class="legend2">If you were to win tickets whichs how would you like 2 tickets to?</label><br>
+  <input type="radio" name="ticketsBox" id="brit">
+  <label class="legend2">BRIT FLOYD (March 24, 2016)</label>
+  <input type="radio" name="ticketsBox" id="iron">
+  <label class="legend2">IRON MAIDEN (April 1, 2016)</label>
+  <input type="radio" name="ticketsBox" id="janet">
+  <label class="legend2">JANET JACKSON (June 17, 2016)</label>
+  <input type="radio" name="ticketsBox" id="adele">
+  <label class="legend2">ADELE (September 30, 2016)</label>
+
+
+</fieldset>
+
+<p>Thank you for taking the time to fill out our survey!</p>
+  <input type="submit">
+  <input type="reset">
+  
+</form>
+
+
+
+</body>
+</html>
+
+
+  
