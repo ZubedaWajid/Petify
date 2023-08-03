@@ -12,15 +12,15 @@
     padding-left: 60px;
     padding-bottom: 30px;
     padding-top: 30px;
-    background: #032744;
+    background: #000000;
     color: #ffffff;
     border-bottom: 1px solid #e0e4e8;
 
 }
 body {
    
-    background-color: rgba(0, 0, 0, 0.938);
-    color: #a8540fb9;
+    background-color: rgba(172, 216, 236, 0.938);
+    color: #000404b9;
 }
 
 .wrapper {
@@ -267,3 +267,22 @@ input[required]::before {
     
   }
   
+  #pets{
+
+    font-size: 25px;
+    height: 300px;
+  }
+/* 
+  #aniss{
+    height: 350px;
+    width: 300px;
+  }
+
+  #constance{
+    height: 350px;
+    width: 300px;
+  }
+  #andy{
+    width: 350px;
+    height: 300px;
+  } */
