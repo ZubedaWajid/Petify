@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>HomeFinder</title>
+        <title>Petsy</title>
         <link rel="stylesheet" href="Question8.css">
         <script src="Q7.js"></script>
     </head>
@@ -18,7 +18,7 @@
                         href="Pets.html"> Browse
                         Available Pets</a></li>
                     <li><a class="navigation"
-                            href="Find_Dog-Cat.html">  Find A Dog/Cat</a></li>
+                            href="find.html">  Find A Dog/Cat</a></li>
                     <li><a class="navigation" href="DogCare.html">
                             Dog Care</a></li>
                     <li><a class="navigation" href="CatCare.html">Cat
@@ -52,239 +52,229 @@
                 <div class="content_form">
 
 
-                    <form>
+                    <form id="pet_form">
                         <fieldset style="padding:10px">
                             <legend><h3>Give Away your Pet</h3></legend>
 
-                            <label>What is your pet?</label><br><br>
+                            <label id="giveawayQs">What is your pet?</label><br><br>
 
                             <label>Dog:</label>
                             <input type="radio" name="choose" value="dog">
                             <label>Cat:</label>
                             <input type="radio" name="choose" value="cat"><br><br><br>
-                        </fieldset><br>
+                        
 
-                    </form>
+                            
+                            <label id="giveawayQs">What Breed is your pet?</label><br><br>
+                            <label>Labrador Retriever</label>
+                            <input type="radio" name="breed" value="Labrador">
+                            
+                            <label>Golden Retriever</label>
+                            <input type="radio" name="breed" value="Golden">
+                            
+                            <label>Husky</label>
+                            <input type="radio" name="breed" value="Husky">
 
-                    <div id="dog-form" style="display:none;">
-                        <form id="dog_form">
-                            <fieldset style="padding:10px">
-                                <label>What breed is your dog?</label><br><br>
-                                <label>German Shepherd:</label>
-                                <input type="radio" name="breed_dog"
-                                    value="German">
+                            <label>Poodle</label>
+                            <input type="radio" name="breed" value="Poodle"><br>
 
-                                <label>Bulldog:</label>
-                                <input type="radio" name="breed_dog"
-                                    value="Bulldog">
+                            <label>Persian</label>
+                            <input type="radio" name="breed" value="Persian">
 
-                                <label>Golder Retriever:</label>
-                                <input type="radio" name="breed_dog"
-                                    value="Golden"><br><br>
+                            <label>Siberian</label>
+                            <input type="radio" name="breed" value="Siberian">
 
-                                <label>Poodle:</label>
-                                <input type="radio" name="breed_dog"
-                                    value="Poodle">
+                            <label>Siemese</label>
+                            <input type="radio" name="breed" value="Siemese">
 
-                                <label>Husky:</label>
-                                <input type="radio" name="breed_dog"
-                                    value="Husky">
+                            <label>Birman</label>
+                            <input type="radio" name="breed" value="Birman">
 
-                                <label>Mixed:</label>
-                                <input type="radio" name="breed_dog"
-                                    value="mixed">
+                            <label>American curl</label>
+                            <input type="radio" name="breed" value="American">
 
-                                <label>None:</label>
-                                <input type="radio" name="breed_dog"
-                                    value="none"><br><br><br>
+                            <label>Mixed</label>
+                            <input type="radio" name="breed" value="Mixed"><br><br><br>
 
-
-
-                                <label> Age of dog?</label>
-                                <select name="age_dog" id="age_dog">
+                            <label id="giveawayQs">How old is your pet? (Select a range)</label>
+                            
+                            
+                            <!-- <input type="range" min="0" max="100" value="50" class="slider" id="myRange"><br><br><br>
+                             --> <select name="age" id="age">
                                     <option value="default"> --- </option>
                                     <option value="range1">0 - 1</option>
                                     <option value="range2">1 - 3</option>
                                     <option value="range3">3 - 7</option>
                                     <option value="range4">7 - over</option>
                                 </select><br><br>
+                            
+                            <label id="giveawayQs">What is your pets Gender?</label>
+                            <label>Male</label>
+                            <input type="radio" name="gender" value="Male">
+                            
+                            <label>Female</label>
+                            <input type="radio" name="gender" value="Female"><br><br><br>
+
+                            <label id="giveawayQs">Does your dog get along with
+                                any of these options [pick as many as apply]:
+                            </label><br><br>
+                            <label>Other Dogs:</label>
+                            <input type="checkbox" name="others" value="other_dogs">
+                            <label>Other Cats:</label>
+                            <input type="checkbox" name="others" value="other_cats"><br><br><br>
+                            
 
 
+                            <label id="giveawayQs">Is your animal suitable for a family with small children?</label>
+                            <label>Yes</label>
+                            <input type="radio" name="fam" value="Yes">
+                            <label>No</label>
+                            <input type="radio" name="fam" value="No"><br><br><br>
 
-                                <label>Dog gender?</label>
-                                <select name="gender_dog">
-                                    <option value="default">---</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select><br><br><br>
+                            <label id="giveawayQs">Comment section to describe your pet:</label>
+                                <p></p>
+                                <textarea name="comment" rows="8" cols="80"></textarea> <br><br>
 
-
-
-                                <label>Does your dog get along with
-                                    any of these options [pick as many as
-                                    apply]:
-                                </label><br><br>
-                                <label>Other Dogs:</label>
-                                <input type="checkbox" name="OtherDog"
-                                    value="other dogs">
-                                <label>Other Cats:</label>
-                                <input type="checkbox" name="OtherCat"
-                                    value="other cats">
-                                <label>Small Children:</label>
-                                <input type="checkbox" name="Children"
-                                    value="children">
-                                <label>Does Not Matter:</label>
-                                <input type="checkbox" name="NA"
-                                    value="NA">
-
-                                <br><br><br>
-
-
-                                <p><label>Comment section to
-                                        describe your pet:</label></p>
-                                <textarea name="comment_dog"
-                                    rows="10" cols="100"></textarea>
-
-                                <br><br><br>
-
-                                <label>Your full name:</label>
-                                <input type="text" name="name_dog">
-
-                                <br><br><br>
-
+                                <label>Enter your full name:</label>
+                                <input type="text" name="name">
+    
+                                <br><br>
+    
                                 <label>Email:</label>
-                                <input type="email" placeholder="Enter your email"
-                                    name="email_dog">
-                            </fieldset>
-                            <br>
-                            <label>Thank you for taking the time to fill
-                                out the
-                                survey!</label><br><br>
-                            <input type="submit" value="Submit">
+                                <input type="email" placeholder="Enter your email" name="email">
+                        </fieldset>
+                       
+                            <input type="submit" value="Submit"
+                                onclick="validate_form()">
                             <input type="reset" value="Reset">
-                            <br>
-
-
-                        </form>
-                    </div>
-
-                    <form id="cat_form">
-
-                        <div id="cat-form" style="display:none;">
-                            <fieldset style="padding:10px">
-                                <label>What breed is your cat?</label><br><br>
-                                <label>Maine Coon:</label>
-                                <input type="radio" name="breed_cat"
-                                    value="Maine">
-
-                                <label>Bristish Shorthair:</label>
-                                <input type="radio" name="breed_cat"
-                                    value="Bristish">
-
-                                <label>Sphynx:</label>
-                                <input type="radio" name="breed_cat"
-                                    value="Sphynx"><br><br>
-
-                                <label>American Shorthair:</label>
-                                <input type="radio"
-                                    name="breed_cat" value="American Shorthair">
-                                <label>Persian:</label>
-                                <input type="radio" name="breed_cat"
-                                    value="Persian">
-
-                                <label>Mixed:</label>
-                                <input type="radio" name="breed_cat"
-                                    value="mixed">
-
-                                <label>None:</label>
-                                <input type="radio" name="breed_cat"
-                                    value="none"><br><br><br>
-
-
-                                <label> Age of cat?</label>
-                                <select name="age_cat" id="age_cat">
-                                    <option value="default"> --- </option>
-                                    <option value="range1">0 - 1</option>
-                                    <option value="range2">1 - 3</option>
-                                    <option value="range3">3 - 7</option>
-                                    <option value="range4">7 - over</option>
-                                </select><br><br>
-
-
-
-                                <label>Cat gender?</label>
-                                <select name="gender_cat" id="gender_cat">
-                                    <option value="default">---</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                </select><br><br><br>
-
-
-
-
-
-                                <label>Does your dog get along with
-                                    any of these options [pick as many as
-                                    apply]:
-                                </label><br><br>
-                                <label>Other Dogs:</label>
-                                <input type="checkbox" name="OtherDog"
-                                    value="other dogs">
-                                <label>Other Cats:</label>
-                                <input type="checkbox" name="OtherCat"
-                                    value="other cats">
-                                <label>Small Children:</label>
-                                <input type="checkbox" name="Children"
-                                    value="children">
-                                <label>Does Not Matter:</label>
-                                <input type="checkbox" name="NA"
-                                    value="NA">
-                                <br><br><br>
-
-
-
-                                <p><label>Comment section to
-                                        describe your pet:</label></p>
-                                <textarea name="comment_cat"
-                                    rows="10" cols="100"></textarea>
-
-                                <br><br><br>
-
-                                <label>Your full name:</label>
-                                <input type="text" name="name_cat">
-
-                                <br><br><br>
-
-                                <label>Email:</label>
-                                <input type="email" placeholder="Enter your email"
-                                    name="email_cat">
-                                <br><br><br>
-                            </fieldset>
-                            <br>
-                            <label>Thank you for taking the time to fill
-                                out the
-                                survey!</label><br><br>
-                            <input type="submit" value="Submit">
-                            <input type="reset" value="Reset">
-                            <br>
-                        </div>
-
-
                     </form>
-
-
-
-
-
-
                 </div>
+
+                
                 <div style="padding-left: 50px;margin-top:37%; ">
 
                     <footer><button class="privacy">
                             Privacy/Disclaimer Statement</button></footer>
                 </div>
+
+
             </div>
-            
+            <script>
+                function footer() {
+                    alert("Dear users,\n\nWe take the security and privacy of your personal information extremely seriously at HomeFinder. We want to reassure you that we would never sell your information or use it improperly in any way. We recognise how crucial it is to maintain the privacy of your personal information and will always take precautions to keep it secure. Strict security controls are in place on our website to guard  against unauthorised access to your information, and we'll never share or sell it to anybody.\n\nFurthermore, we value the accuracy and timeliness of  the data you give on our platform as a pet owner. Though we acknowledge that mistakes do occur, we want to make sure that any inaccurate information is quickly updated.\n\nPlease contact us if you think  any information on our site is inaccurate, and we will make the appropriate corrections. We appreciate your confidence in HomeFinder. In order to meet all of your pet-related demands, weare dedicated to giving you a safe and secure platform.\n");
+                }
+
+
+            function validate_form() {
+                
+                var breed_pet = document.forms["pet_form"]["breed"];
+                var pet_select = document.forms["pet_form"]["choose"]
+                var age_pet = document.forms["pet_form"]["age"];
+                var gender_pet = document.forms["pet_form"]["gender"];
+                var comment_pet = document.forms["pet_form"]["comment"];
+                var name_pet = document.forms["pet_form"]["name"];
+                var email_pet = document.forms["pet_form"]["email"];
+                var suitableFam_pet = document.forms["pet_form"]["fam"];
+                
+                
+                var breedSelect = false;
+                var petSelect = false;
+                var genderSelect = false;
+                var emailDefault = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                var comment_trimmed = comment_pet.value.trim();
+                var nameEntered = false;
+                var suitableFam = false;
+                
+
+                for (var i = 0; i < pet_select.length; i++) {
+                    if (pet_select[i].checked) {
+                    petSelect = true;
+                    break;
+                    }
+                }
+                if (!petSelect) {
+                    alert("Please select a Pet.");
+                    event.preventDefault();
+                    return false; 
+                
+                }
+                for (var i = 0; i < breed_pet.length; i++) {
+                    if (breed_pet[i].checked) {
+                    breedSelect = true;
+                    break;
+                    }
+                }
+                
+
+                if (!breedSelect) {
+                    alert("Please select a Breed.");
+                    event.preventDefault();
+                    return false; 
+                
+                }
+               
+                if (age_pet.value =="default") {
+                    alert("Please select an age.");
+                    event.preventDefault();
+                    return false; 
+                }
+                for (var i = 0; i < gender_pet.length; i++) {
+                    if (gender_pet[i].checked) {
+                    genderSelect = true;
+                    break;
+                    }
+                }
+               
+                if (!genderSelect) {
+                    alert("Please select a gender.");
+                    event.preventDefault();
+                    return false; 
+                
+                }
+
+                var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                var checkedOne = Array.prototype.slice.call(checkboxes).some(x => x.checked);
+              
+                if (!checkedOne) {
+                    alert("Please select at least one checkbox.");
+                    event.preventDefault();
+                      return false; 
+                }
+
+                for (var i = 0; i < suitableFam_pet.length; i++) {
+                    if (suitableFam_pet[i].checked) {
+                    suitableFam = true;
+                    break;
+                    }
+                }
+               if (!suitableFam) {
+                  alert("Please select if your animal is suitable for small children.");
+                  event.preventDefault();
+                    return false; 
+                }
+               
+                if (comment_trimmed == "") {
+                    alert("Please add some comments on your pet.");
+                    event.preventDefault();
+                    return false; // prevents form submission
+                }
+
+                if (name_pet.value === "") {
+                    alert("Please enter your name.");
+                    event.preventDefault();
+                    return false; // prevents form submission
+                }
+                if (emailDefault.test(email_pet.value) == false) {
+                    alert("Please add a valid email.");
+                    event.preventDefault();
+                    return false; // prevents form submission
+                }
+                
+                return true; // allows form submission
+                }
+
+                
+    </script>
         </div>
     </body>
 </html>

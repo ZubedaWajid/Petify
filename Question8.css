@@ -36,7 +36,7 @@ body {
     background: #032744;
     padding: 30px 0px;
     position: fixed;
-    border-right: solid 5px #ececec;
+    border-right: solid 2px #ececec;
 
 }
 
@@ -196,7 +196,7 @@ input[required]::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px;
+    margin: 50px;
   }
   
   .pet {
@@ -208,10 +208,10 @@ input[required]::before {
     border-radius: 5px;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
   }
-  /* remove margin for 2nd pet on the horizontal*/
+  /* remove margin for 2nd pet on the horizontal
   .pet:nth-child(odd) {
     margin-right: 0;
-  }
+  } */
   
   
   .pet img {
@@ -235,19 +235,17 @@ input[required]::before {
   }
   
   .pet button {
-    display: block;
     margin: 10px auto 0;
     padding: 10px;
-    background-color: #00eaffb9;
+    background-color: #98e7eeb9;
     color: black;
-    border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
   }
   
   .pet button:hover {
-    background-color: #594f8d;
+    background-color: #000000;
     color:#ececec ;
   }
 
@@ -262,7 +260,7 @@ input[required]::before {
     border-style:ridge;
     border-radius: 15px;
     border-width: 3px;
-    border-color: rgb(216, 139, 23);
+    border-color: rgb(66, 168, 199);
     margin-left: 40px;
     
   }
@@ -271,6 +269,16 @@ input[required]::before {
 
     font-size: 25px;
     height: 300px;
+  }
+
+  .logo{
+    height: 140px;
+  }
+  #giveawayQs{
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    
   }
 /* 
   #aniss{
@@ -286,3 +294,30 @@ input[required]::before {
     width: 350px;
     height: 300px;
   } */
+ 
+  
+  /* The slider itself */
+  .slider {
+    
+    appearance: none;
+    width: 20%; /* Full-width */
+    height: 15px; /* Specified height */
+    background: #03207e; /* Grey background */
+    outline: none; /* Remove outline */
+    
+  }
+  
+ 
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: url('logo.jpg');
+    background: #55c6e2; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  

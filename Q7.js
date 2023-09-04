@@ -13,5 +13,10 @@ function updateTime() {
       alert("Please select at least one checkbox.");
     }
   }
+
+  function privacy(){
+    
+  }
+  
   
   
